@@ -2,39 +2,69 @@
 
     % \usepackage{ebgaramond}
 
-    % Fix the list in the SKILLS section
-    \usepackage{enumitem} % Allows for adding options to lists
-    \usepackage[margin=1in]{geometry}
-    \usepackage{setspace} 
+% Fix the list in the SKILLS section
+\usepackage{enumitem} % Allows for adding options to lists
+\usepackage[margin=1in]{geometry}
+\usepackage{setspace} 
+\usepackage{multicol}
 
 \begin{document}
 
   \name{William Setzer}
-  \contact{will@setzertech.com}{334-300-7107} % chktex 8
+  \contact{william@setzer.tech}{334-300-7107} % chktex 8
 
 
   \section{Summary}
-  Customer-focused professional offering experience in computer programming, data collection, data processing, and analysis, with knowledge in \textbf{Java} and \textbf{Python}.
+  Customer-focused professional offering experience in computer programming, data collection, data processing, and analysis, with knowledge in Java and Python.
+
+  \section{Skills and Languages}
+
+  {
+  \setlength\multicolsep{0pt}
+  \begin{multicols}{2}
+    \noindent
+    \begin{itemize}[nosep]
+      \item Strong knowledge of Python
+      \item Strong knowledge of Linux
+      \item Good knowledge of PostgreSQL
+      \item Working knowledge of HTML and JavaScript
+      \item Working knowledge of MongoDB
+      \item Working knowledge of Java
+      \item Working knowledge of Ruby
+      \item Working knowledge of x86 Assembly
+      \item Working knowledge of Scala
+    \end{itemize}
+  \end{multicols}
+  }
 
   \section{Education}
   Bachelor of Computer Science \hfill May 2018 \\
   University of Alabama at Birmingham \hfill Birmingham, Alabama \\
-  GPA: 3.80
+  GPA\@: 3.81
 
   \section{Work Experience}
 
-        % \twopartsubsection{Programmer}{May 2017 -- Present}
-
-        % \textbf{Programmer} \hfill May 2017 -- Present \\
-        % \twopartsubsection{\textit{The Center at UAB}}{Birmingham, Alabama}
-
   \jobheading{Research Assistant}{May 2018 -- Present}{UAB Department of Computer Science}{} % chktex 8
+
+  \begin{itemize}[nosep]% [topsep=0em, itemsep=-0.5em]
+    \item Collected data using Python, Ruby, and PostgreSQL from Reddit and alternative social media sites, e.g. 4chan, 8chan, Minds.
+    \item Analyzed collected data with Python and Hadoop to find statistical patterns, producing plots to visualize the data using various plots, e.g. CDFs, CCDFs, joint distributions, and basic scatter and line plots.
+    \item Used change point analysis to correlate changes in the patterns of data collected to real-world events.
+  \end{itemize}
+
+  \jobheading{Teaching Assistant}{August 2017 -- May 2018}{UAB Department of Computer Science} % chktex 8
+
+  \begin{itemize}[nosep]
+    \item Instructed lab sections for both Introduction to Computer Science and Computer Architecture, teaching and assisting a wide variety of students as they learned Python in the introductory course and x86 Assembly in the computer architecture course.
+    \item Graded homework assignments.
+  \end{itemize}
 
   \jobheading{Programmer}{May 2017 -- May 2018}{UAB Computer Forensics Research Lab}{} % chktex 8
 
-  \begin{itemize}[topsep=0em, itemsep=-0.5em]
+  \begin{itemize}[nosep]% [topsep=0em, itemsep=-0.2em]
 
-    \item Created effient web scrapers to scrape forums in \textbf{Python} using packages including \textit{Requests}, \textit{lxml}, \textit{aiohttp}, \textit{AsyncIO}, \textit{multiprocessing}, and \textit{Selenium}.
+    \item Managed the programming team to 
+    \item Created efficient web scrapers to scrape forums in \textbf{Python} using packages including \textit{Requests}, \textit{lxml}, \textit{aiohttp}, \textit{AsyncIO}, \textit{multiprocessing}, and \textit{Selenium}.
     \item Transitioned web scraping in the lab from pure Selenium to Requests, AsyncIO, and aiohttp to create faster web scrapers.
     \item Created a web forum database for scrapers in \textbf{PostgreSQL} to replace multiple non-standardized ways of storing forum data.
     % \item Transitioned web scraping database from PostgreSQL to \textbf{MongoDB}, allowing for easier database inserting and queries and easier analysis by the client.
@@ -52,12 +82,15 @@
   \jobheading{Website Product Entry}{June 2014 -- August 2014}{Beth's Heirloom Sewing}{Wetumpka, Alabama} % chktex 8
 
   \section{Awards and Leadership}
-    \begin{itemize}
-          \item \itemanddate{UAB Presidential Scholarship}{Fall 2014}
-          \item \itemanddate{Vermeer Corporation Scholarship}{2014, 2016}
-        \end{itemize}
 
-    % \section{Volunteer Experience}
+  \begin{itemize}
+    \item \itemanddate{UAB President's List}{Spring 2016, Fall 2016, Fall 2017, Spring 2018}
+    \item \itemanddate{UAB Dean's List}{Fall 2015, Spring 2017}
+    \item \itemanddate{UAB Presidential Scholarship}{Fall 2014 -- Spring 2018} % chktex 8
+    \item \itemanddate{Vermeer Corporation Scholarship}{2014, 2016}
+  \end{itemize}
+
+  % \section{Volunteer Experience}
 
 
 \end{document}
