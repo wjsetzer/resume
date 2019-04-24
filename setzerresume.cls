@@ -38,17 +38,24 @@
     \centerline{\Large{#1}}
 }
 
-% \newcommand{\contact}[5]{
+% \newcommand{\contact}[3]{
 %     #1 {\large\textperiodcentered} #2 {\large\textperiodcentered} #3
-%     {\Large} #4 \ {\Large} #5
 % }
 
-\newcommand{\contact}[2]{
-    \centerline {#1 {\large\textperiodcentered} #2 {\large}}
+\newcommand{\contact}[3]{
+    \centerline {#1 {\large\textperiodcentered} #2 {\large\textperiodcentered} #3}
 }
 
 \newcommand{\itemanddate}[2]{
   {\scshape{\textbf #1} \null\hfill #2}
+}
+
+\newcommand{\mailto}[1]{
+  \href{mailto://#1}{#1}
+}
+
+\newcommand{\linkedin}[1]{
+  \href{https://linkedin.com/in/#1}{linkedin.com/in/#1}
 }
 
 % \newcommand{\itemanddate}[3][2]{

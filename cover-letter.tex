@@ -1,6 +1,4 @@
-\documentclass[10pt]{setzerresume}
-
-    % \usepackage{ebgaramond}
+\documentclass[10pt]{article}
 
 % Fix the list in the SKILLS section
 \usepackage{enumitem} % Allows for adding options to lists
@@ -9,44 +7,39 @@
 \usepackage{multicol}
 \usepackage{hyperref}
 
+\newcommand{\mailto}[1]{
+  \href{mailto://#1}{\textit{#1}}
+}
+
+\newcommand{\linkedin}[1]{
+  \href{https://linkedin.com/in/#1}{\textit{linkedin.com/in/#1}}
+}
+
 \begin{document}
 
-  \name{William Setzer}
-  \contact{\mailto{william@setzer.tech}}{334-300-7107}{\linkedin{william-setzer}} % chktex 8
+  % \name{William Setzer}
+  % \contact{william@setzer.tech}{334-300-7107} % chktex 8
+  \begin{flushright}
+    \textbf{William Setzer}
 
+    \mailto{william@setzer.tech}
 
-  \section{Summary}
+    \linkedin{william-setzer}
+  \end{flushright}
+
+  \bigskip
+
+  Dear Sir or Madame,
+
+  \bigskip
+
   Customer-focused professional offering experience in computer programming, data collection, data processing, and analysis, with knowledge in Java and Python.
 
-  \section{Skills and Languages}
 
-  {
-  \setlength\multicolsep{0pt}
-  \begin{multicols}{2}
-    \noindent
-    \begin{itemize}[nosep]
-      \item Strong knowledge of Python
-      \item Strong knowledge of Linux
-      \item Good knowledge of PostgreSQL
-      \item Working knowledge of HTML and JavaScript
-      \item Working knowledge of MongoDB
-      \item Working knowledge of Java
-      \item Working knowledge of Ruby
-      \item Working knowledge of x86 Assembly
-      \item Working knowledge of Scala
-      \item Beginner proficiency in German
-    \end{itemize}
-  \end{multicols}
-  }
-
-  \section{Education}
   Bachelor of Computer Science with Honors, \textit{Magna Cum Laude} \hfill May 2018 \\
   University of Alabama at Birmingham \hfill Birmingham, Alabama \\
   GPA\@: 3.81
 
-  \section{Work Experience}
-
-  \jobheading{Research Assistant}{May 2018 -- Present}{UAB Department of Computer Science}{} % chktex 8
 
   \begin{itemize}[nosep]% [topsep=0em, itemsep=-0.5em]
     \item Collected data using Python, Ruby, and PostgreSQL from Reddit and alternative social media sites, e.g. 4chan, 8chan, Minds.
@@ -54,22 +47,16 @@
     \item Used change point analysis to correlate changes in the patterns of data collected to real-world events.
   \end{itemize}
 
-  \jobheading{Teaching Assistant}{August 2017 -- May 2018}{UAB Department of Computer Science} % chktex 8
-
   \begin{itemize}[nosep]
     \item Instructed lab sections for both Introduction to Computer Science and Computer Architecture, teaching and assisting a wide variety of students as they learned Python in the introductory course and x86 Assembly in the computer architecture course.
     \item Graded homework assignments.
   \end{itemize}
-
-  \jobheading{Programming Team Lead}{December 2017 -- August 2018}{UAB Computer Forensics Research Lab}{} % chktex 8
 
   \begin{itemize}[nosep]
     \item Supervised the programming team, ensuring the quality of code and the delivery of tools for use by the lab's cybercrime analysts.
     \item Established effective use of version control and documentation practices.
     \item Conducted programmer interviews and onboarded new team members.
   \end{itemize}
-
-  \jobheading{Programmer}{April 2017 -- August 2018}{UAB Computer Forensics Research Lab}{} % chktex 8
 
   \begin{itemize}[nosep]% [topsep=0em, itemsep=-0.2em]
 
@@ -82,24 +69,9 @@
   \end{itemize}
 
 
-  \jobheading{Barista}{May 2016 -- November 2016}{Starbucks}{Birmingham, Alabama} % chktex 8
 
-  \jobheading{Cashier}{January 2016 -- May 2016}{Chick-fil-A}{Birmingham, Alabama} % chktex 8
 
-  \jobheading{Prosthetic Technician}{May 2015 -- June 2015, May 2013 -- June 2013}{Alabama Artificial Limb and Orthotics Service}{Montgomery, Alabama} % chktex 8
 
-  \jobheading{Website Product Entry}{June 2014 -- August 2014}{Beth's Heirloom Sewing}{Wetumpka, Alabama} % chktex 8
-
-  \section{Awards and Leadership}
-
-  \begin{itemize}
-    \item \itemanddate{UAB President's List}{Spring 2016, Fall 2016, Fall 2017, Spring 2018}
-    \item \itemanddate{UAB Dean's List}{Fall 2015, Spring 2017}
-    \item \itemanddate{UAB Presidential Scholarship}{Fall 2014 -- Spring 2018} % chktex 8
-    \item \itemanddate{Vermeer Corporation Scholarship}{2014, 2016}
-  \end{itemize}
-
-  % \section{Volunteer Experience}
 
 
 \end{document}

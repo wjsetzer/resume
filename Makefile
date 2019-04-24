@@ -1,12 +1,17 @@
 
 latexmk = pdflatex
 
-project = William-Setzer-resume
+resume = William-Setzer-resume
+resume-files = William-Setzer-resume.tex res.cls
 
-# srcs = resume.tex
+cover-letter = cover-letter
 
-watched = res.cls
+all : resume cover-letter
 
-all : $(srcs) $(watched)
-	$(latexmk) $(project)
+resume : $(addsuffix .tex, $(resume)) $(resume-files)
+	$(latexmk) $(resume)
+
+cover-letter : $(addsuffix .tex, $(cover-letter))
+	$(latexmk) $(cover-letter)
+
 	
