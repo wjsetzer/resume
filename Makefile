@@ -11,7 +11,5 @@ all : resume cover-letter
 resume : $(addsuffix .tex, $(resume)) $(resume-files)
 	$(latexmk) $(resume)
 
-cover-letter : $(addsuffix .tex, $(cover-letter))
-	$(latexmk) $(cover-letter)
-
-	
+clean	:
+	rm *.aux
