@@ -1,7 +1,7 @@
 \LoadClass{article}
 
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{setzer_resume}[2017/10/15 Custom resume class]
+\ProvidesClass{setzerresume}[2017/10/15 Custom resume class]
 
 \RequirePackage{titlesec}
 \RequirePackage{kpfonts}
